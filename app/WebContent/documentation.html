@@ -1,0 +1,1082 @@
+<html>
+<head>
+<title>Documentation</title>
+<style type="text/css">
+ol {
+	margin: 0;
+	padding: 0
+}
+
+.c18 {
+	list-style-type: decimal;
+	margin: 0;
+	padding: 0
+}
+
+.c10 {
+	list-style-type: circle;
+	margin: 0;
+	padding: 0
+}
+
+.c19 {
+	list-style-type: disc;
+	margin: 0;
+	padding: 0
+}
+
+.c16 {
+	max-width: 468pt;
+	background-color: #ffffff;
+	padding: 72pt 72pt 72pt 72pt
+}
+
+.c15 {
+	padding-left: 0pt;
+	margin-left: 72pt
+}
+
+.c6 {
+	color: inherit;
+	text-decoration: inherit
+}
+
+.c3 {
+	font-size: 12pt;
+	font-weight: bold
+}
+
+.c5 {
+	padding-left: 0pt;
+	margin-left: 36pt
+}
+
+.c7 {
+	color: #1155cc;
+	text-decoration: underline
+}
+
+.c9 {
+	color: #ff0000
+}
+
+.c2 {
+	margin-left: 18pt
+}
+
+.c21 {
+	text-indent: -22.5pt
+}
+
+.c12 {
+	margin-left: 36pt
+}
+
+.c17 {
+	margin-left: -22.5pt
+}
+
+.c14 {
+	text-align: center
+}
+
+.c0 {
+	direction: ltr
+}
+
+.c13 {
+	font-size: 14pt
+}
+
+.c1 {
+	line-height: 1.5
+}
+
+.c4 {
+	font-size: 12pt
+}
+
+.c8 {
+	height: 11pt
+}
+
+.c11 {
+	margin-left: 54pt
+}
+
+.c20 {
+	height: 12pt
+}
+
+.title {
+	padding-top: 24pt;
+	line-height: 1.15;
+	text-align: left;
+	color: #000000;
+	font-size: 36pt;
+	font-family: "Arial";
+	font-weight: bold;
+	padding-bottom: 6pt
+}
+
+.subtitle {
+	padding-top: 18pt;
+	line-height: 1.15;
+	text-align: left;
+	color: #666666;
+	font-style: italic;
+	font-size: 24pt;
+	font-family: "Georgia";
+	padding-bottom: 4pt
+}
+
+li {
+	color: #000000;
+	font-size: 11pt;
+	font-family: "Arial"
+}
+
+p {
+	color: #000000;
+	font-size: 11pt;
+	margin: 0;
+	font-family: "Arial"
+}
+
+h1 {
+	padding-top: 24pt;
+	line-height: 1.15;
+	text-align: left;
+	color: #000000;
+	font-size: 18pt;
+	font-family: "Arial";
+	font-weight: bold;
+	padding-bottom: 6pt
+}
+
+h2 {
+	padding-top: 18pt;
+	line-height: 1.15;
+	text-align: left;
+	color: #000000;
+	font-size: 14pt;
+	font-family: "Arial";
+	font-weight: bold;
+	padding-bottom: 4pt
+}
+
+h3 {
+	padding-top: 14pt;
+	line-height: 1.15;
+	text-align: left;
+	color: #666666;
+	font-size: 12pt;
+	font-family: "Arial";
+	font-weight: bold;
+	padding-bottom: 4pt
+}
+
+h4 {
+	padding-top: 12pt;
+	line-height: 1.15;
+	text-align: left;
+	color: #666666;
+	font-style: italic;
+	font-size: 11pt;
+	font-family: "Arial";
+	padding-bottom: 2pt
+}
+
+h5 {
+	padding-top: 11pt;
+	line-height: 1.15;
+	text-align: left;
+	color: #666666;
+	font-size: 10pt;
+	font-family: "Arial";
+	font-weight: bold;
+	padding-bottom: 2pt
+}
+
+h6 {
+	padding-top: 10pt;
+	line-height: 1.15;
+	text-align: left;
+	color: #666666;
+	font-style: italic;
+	font-size: 10pt;
+	font-family: "Arial";
+	padding-bottom: 2pt
+}
+</style>
+</head>
+<body class="c16">
+
+	<a href="shop">Back to the website</a>
+
+	<p class="c14 c0 c1 title">
+		<a name="h.g3sz9hl587m1"></a><span>Assignment 2</span>
+	</p>
+	<h1 class="c0">
+		<a name="h.59zfrfsef100"></a><span>Team members:</span>
+	</h1>
+	<p class="c0">
+		<span class="c13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Huy
+			Hoan Dang (11458724) : Handle front page, design architecture, cart
+			and order EJB container, and web service</span>
+	</p>
+	<p class="c0">
+		<span class="c13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arun
+			Jayaraj (11044942): Handle JPA, Database, Shop EJB Container.</span>
+	</p>
+	<h1 class="c0">
+		<a name="h.2y8bx86kgbb5"></a><span>Executive Summary</span>
+	</h1>
+	<p class="c0 c8">
+		<span></span>
+	</p>
+	<p class="c0">
+		<span class="c4">This report provides information on
+			implementing Olympic shopping cart and Java Enterprise technologies
+			used to enhance the performance of the website. In our previous
+			assignment we had implemented 3 tier architecture website, to improve
+			in quality and performance multi tier architecture is used in current
+			web application . The transformation of the website to multi tier is
+			being implemented with Enterprise Java Bean (EJB), Java Persistence
+			API (JPA), JSTL, JDBC - mysql , Java EE security role, Java server
+			Page, Servlets and Web Service. These technologies help the vendor to
+			change and make improvements on the underlying middleware layer
+			without affecting a user&rsquo;s existing enterprise applications.
+			EJB and JPA play vital role in middleware to control access of
+			database, business logic and controlling the application via a
+			servlet.</span>
+	</p>
+	<p class="c0">
+		<span class="c4">The webservice is used by the suppliers to
+			update and display the products, only certain right is invoked to
+			suppliers to perform action and supplier need to authenticate for
+			using service, the detailed overview of the webservice is illustrated
+			with diagrams.</span>
+	</p>
+	<p class="c0 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0">
+		<span class="c4">The report has detailed overview of the plan
+			and the process involved in the web application this is illustrated
+			using sequence diagram , class diagram and ERD diagram. Multi tier
+			diagram is interpreted to show the overview of web application
+			application and process involved.</span>
+	</p>
+	<p class="c0 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0">
+		<span class="c4">Hence this document shows that our website is
+			implemented multi tier architecture and deep knowledgeable thoughts
+			is being illustrated with appropriate diagrams to prove our multi
+			tier implementation.</span>
+	</p>
+	<p class="c0 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0">
+		<span class="c4">Table of Content</span>
+	</p>
+	<p class="c0 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8 c14">
+		<span class="c4"></span>
+	</p>
+	<p class="c2 c0">
+		<span class="c7"><a class="c6" href="#h.2y8bx86kgbb5">Executive
+				Summary</a></span>
+	</p>
+	<p class="c0 c2">
+		<span class="c7"><a class="c6" href="#h.1twvk1hic45j">1.
+				N-Tier Architecture and MVC</a></span>
+	</p>
+	<p class="c0 c11">
+		<span class="c7"><a class="c6" href="#h.rndg45rphdre">1.1
+				Prototype of the Web application</a></span>
+	</p>
+	<p class="c0 c11">
+		<span class="c7"><a class="c6" href="#h.l8ftmmoki57h">1.2
+				N-tier Architecture</a></span>
+	</p>
+	<p class="c12 c0">
+		<span class="c7"><a class="c6" href="#h.46ziwu5ob57z">1.3
+				MVC</a></span>
+	</p>
+	<p class="c0 c11">
+		<span class="c7"><a class="c6" href="#h.etr6fqbp0klz">1.3.1
+				Browsing Product Process:</a></span>
+	</p>
+	<p class="c0 c11">
+		<span class="c7"><a class="c6" href="#h.4205f0s5m72b">1.3.2
+				Product Ordering Process</a></span>
+	</p>
+	<p class="c0 c11">
+		<span class="c7"><a class="c6" href="#h.tn2izh619dx8">1.3.3
+				Purchase Process</a></span>
+	</p>
+	<p class="c0 c11">
+		<span class="c7"><a class="c6" href="#h.y1i58nbp7n2s">1.3.4
+				Search Order Process</a></span>
+	</p>
+	<p class="c2 c0">
+		<span class="c7"><a class="c6" href="#h.iimot6f5z0xz">2.
+				Sequence Diagram</a></span>
+	</p>
+	<p class="c12 c0">
+		<span class="c7"><a class="c6" href="#h.qg7j9n7jhtco">2.1
+				Display product process</a></span>
+	</p>
+	<p class="c12 c0">
+		<span class="c7"><a class="c6" href="#h.pufyipihg635">2.2
+				Searching Order</a></span>
+	</p>
+	<p class="c12 c0">
+		<span class="c7"><a class="c6" href="#h.m0xn27p9twco">2.3
+				Ordering product</a></span>
+	</p>
+	<p class="c2 c0">
+		<span class="c7"><a class="c6" href="#h.f35ge594wu8g">3.
+				Components</a></span>
+	</p>
+	<p class="c12 c0">
+		<span class="c7"><a class="c6" href="#h.5spb2v7451da">3.1
+				Shop EJB container:</a></span>
+	</p>
+	<p class="c12 c0">
+		<span class="c7"><a class="c6" href="#h.8g56uzmtlqhv">3.2
+				Cart EJB Container:</a></span>
+	</p>
+	<p class="c0 c12">
+		<span class="c7"><a class="c6" href="#h.ophwumhvbuau">3.3
+				Order EJB Container:</a></span>
+	</p>
+	<p class="c2 c0">
+		<span class="c7"><a class="c6" href="#h.dj7yjo1iy5uu">4.
+				Class Diagram</a></span>
+	</p>
+	<p class="c2 c0">
+		<span class="c7"><a class="c6" href="#h.638fwlg73ra2">5.
+				Webservice</a></span>
+	</p>
+	<p class="c2 c0">
+		<span class="c7"><a class="c6" href="#h.qktwoq8ucvyq">6.
+				Assumptions</a></span>
+	</p>
+	<p class="c2 c0">
+		<span class="c7"><a class="c6" href="#h.tttbawwlq3ei">7.
+				Installation</a></span>
+	</p>
+	<h1 class="c0 c1">
+		<a name="h.1twvk1hic45j"></a><span>1. N-Tier Architecture and
+			MVC</span>
+	</h1>
+	<h3 class="c0">
+		<a name="h.rndg45rphdre"></a><span>1.1 Prototype of the Web
+			application</span>
+	</h3>
+	<p class="c0">
+		<img height="250" src="images/image12.png" width="628">
+	</p>
+	<p class="c0">
+		<span class="c4">In the above scenario we have client, web
+			logic server, application server and database. Client is access the
+			application over internet where client side is totally independent
+			from the application server side. In our web application weblogic
+			server is a middleware server represented as view and controller. In
+			view we have JSP, servlet and JSLT technologies to handle the
+			requests and responses from the client. Where as controller updates
+			the view for the client request. The model is a database where Java
+			persistence API accesses the data from the database. So illustrating
+			into our MVC model of the web application, we go into deep thoughts
+			of analyzing the N-tier architecture.</span>
+	</p>
+	<p class="c0">
+		<span class="c4">&nbsp;</span>
+	</p>
+	<p class="c0">
+		<span class="c4">In our web application we have technologies
+			supported by JEE like Enterprise Java Bean, Java persistence API,
+			SOAP webservice, WS-security, Java server page, JSTL and servlet.</span>
+	</p>
+	<p class="c0 c8">
+		<span></span>
+	</p>
+	<h3 class="c0">
+		<a name="h.l8ftmmoki57h"></a><span>1.2 N-tier Architecture </span>
+	</h3>
+	<p class="c0">
+		<img height="456" src="images/image16.png" width="714">
+	</p>
+	<p class="c0 c1">
+		<span class="c4">In the above diagram illustrates the n tier
+			model of our web application here we have:</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">Presentation tier: In our web application we
+			have we have integrated with jsp and JSTL technologies. The pages are
+			not hardcoded, it is completely separated from the business logic and
+			database. For example in our project we have product.jsp which
+			displays the product lists, the message is sent by the controller
+			servlet called main controller. When user click on categories only
+			request for sent to controller and controller retrieves message for
+			the client request.</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">Business logic layer: Servlet and EJB are the
+			components which used in business logic tier. Well in our project
+			servlet receives the request from the presentation tier JSP page, the
+			request is processed and identifies the EJB model to process request
+			to business model. EJB process the business logic based on message
+			from servlet. In our we application we have request from the product
+			to display, controller process the request choose appropriate
+			business model in EJB. EJB process the message or input parameter
+			from the servlet and business logic processed to retrieve information
+			from the database via Java persistence API.</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">Data access tier: In the data access tier we
+			have Java Persistance API. Connecting to our database and creating
+			business model entity to access each table. We have ShopDAOImpl java
+			class operate on CRUD methodlogy. And interface ShopDAO is used to
+			call the CRUD method which access the entity of Java Persistance API.
+			The connection is maintained purely xml descriptor, which avoids the
+			hardcoding in java class.</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">Data tier is contains only component mysql
+			database, where Java persistence API maintains the connections to web
+			application.</span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<h2 class="c0 c1">
+		<a name="h.46ziwu5ob57z"></a><span>1.3 MVC</span>
+	</h2>
+	<h3 class="c0 c1">
+		<a name="h.etr6fqbp0klz"></a><span>1</span><span>.3.1 Browsing
+			Product Process:</span>
+	</h3>
+	<p class="c0 c1">
+		<span class="c4">User clicks on any category on the product
+			menu to send a request action </span><span class="c3">product</span><span
+			class="c4">&nbsp;and parameter </span><span class="c3">category</span><span
+			class="c4">&nbsp;to servlet </span><span class="c3">MainController.
+		</span><span class="c4">In the MainController, the parameter uses as
+			an ID to initialise the correct list </span><span class="c3">Product
+			Model </span><span class="c4">by connecting to the Database via EJB
+			&nbsp;interface </span><span class="c3">Shop.java</span><span class="c4">&nbsp;which
+			process model for display and use the JPA </span><span class="c3">Product.java
+		</span><span class="c4">entity to access the data from the database .
+			After EJB </span><span class="c3">Shop.java </span><span class="c4">processing
+			the product model the EJB model processed to &nbsp;</span><span class="c3">MainController
+			which </span><span class="c4">dispatches those of objects back to the
+		</span><span class="c3">View</span><span class="c4">&nbsp;JSP file
+			which is </span><span class="c3">products.jsp</span><span class="c4">.
+			In order to display product&rsquo;s information the product.jsp </span><span
+			class="c3">View </span><span class="c4">will invoke back to
+			the Product </span><span class="c3">Model</span><span class="c4">.
+			Finally, the </span><span class="c3">product.jsp</span><span class="c4">&nbsp;</span><span
+			class="c3">View </span><span class="c4">response the
+			information to the client browser and display them.</span>
+	</p>
+	<p class="c0 c1 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0 c1">
+		<img height="355" src="images/image07.png" width="602">
+	</p>
+	<h3 class="c0 c1 c20">
+		<a name="h.v2qq52d25i8z"></a>
+	</h3>
+	<h3 class="c0 c1">
+		<a name="h.4205f0s5m72b"></a><span>1.3.2 Product Ordering
+			Process</span>
+	</h3>
+	<p class="c0 c1">
+		<span class="c4">User from the products page clicks on add cart
+			button on each product to send request action </span><span class="c3">add
+			cart</span><span class="c4">&nbsp;and parameter </span><span class="c3">productId</span><span
+			class="c4">&nbsp;to servlet </span><span class="c3">CartController.
+		</span><span class="c4">In the </span><span class="c3">CartController</span><span
+			class="c4">, the parameter </span><span class="c3">productId</span><span
+			class="c4">&nbsp;uses as an ID to find the product information
+			by connecting to the EJB </span><span class="c3">Shop.java </span><span
+			class="c4">then instantiate the JPA </span><span class="c3">Product
+			model</span><span class="c4">. After products chosen it is set in </span><span
+			class="c3">Cart.java </span><span class="c4">JPA model , the </span><span
+			class="c3">CartController </span><span class="c4">saves the
+			cart&rsquo;s information into a session and then</span><span class="c3">&nbsp;</span><span
+			class="c4">send another request </span><span class="c3">action
+			cart </span><span class="c4">and </span><span class="c3">the session
+			cart</span><span class="c4">&nbsp;to the </span><span class="c3">MainController</span><span
+			class="c4">. From there, the </span><span class="c3">MainController
+		</span><span class="c4">dispatches the object &nbsp;back to the </span><span
+			class="c3">View</span><span class="c4">&nbsp;JSP file which is
+		</span><span class="c3">cart.jsp</span><span class="c4">. In order to
+			display cart information, the </span><span class="c3">cart.jsp</span><span
+			class="c4">&nbsp;</span><span class="c3">View </span><span class="c4">will
+			invoke back to the </span><span class="c3">Product and Cart</span><span
+			class="c4">&nbsp;</span><span class="c3">Model </span><span
+			class="c4">to retrieve the product info. Finally, the </span><span
+			class="c3">cart.jsp</span><span class="c4">&nbsp;</span><span
+			class="c3">View </span><span class="c4">responses the
+			information to the client browser and display them. </span>
+	</p>
+	<p class="c0 c1 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0 c1">
+		<img height="292" src="images/image00.png" width="602">
+	</p>
+	<p class="c0 c1 c8">
+		<span class="c4"></span>
+	</p>
+	<h3 class="c0 c1">
+		<a name="h.tn2izh619dx8"></a><span>1.3.3 Purchase Process</span>
+	</h3>
+	<p class="c0 c1">
+		<span class="c4">From the checkout page where user enter the
+			information. After filling all the form which is triggered some
+			validations the user information will be stored into a session. After
+			that, the user clicks on proceed button to send request action </span><span
+			class="c3">proceed</span><span class="c4">&nbsp;and to servlet
+		</span><span class="c3">OrderController. </span><span class="c4">In
+			the </span><span class="c3">OrderController</span><span class="c4">,
+			the user session will be saved and processed in EJB </span><span class="c3">Order.java
+		</span><span class="c4">and uses the JPA entity </span><span class="c3">Customer
+		</span><span class="c4">to save customer values .After the EJB
+			Order.java processes to save order by calling JPA </span><span class="c3">Cart
+			and Purchase </span><span class="c4">entity. After that, the </span><span
+			class="c3">OrderController</span><span class="c4">&nbsp;send
+			back the </span><span class="c3">orderId </span><span class="c4">to
+			the </span><span class="c3">MainController </span><span class="c4">in
+			order to dispatch it to the </span><span class="c3">success.jsp View.</span><span
+			class="c4">&nbsp; Finally, the </span><span class="c3">success.jsp</span><span
+			class="c4">&nbsp;</span><span class="c3">View </span><span class="c4">responses
+			the information to the client browser and display them. </span>
+	</p>
+	<p class="c0 c8">
+		<span></span>
+	</p>
+	<p class="c0">
+		<img height="305" src="images/image15.png" width="602">
+	</p>
+	<p class="c0 c8">
+		<span></span>
+	</p>
+	<h3 class="c0 c1">
+		<a name="h.y1i58nbp7n2s"></a><span>1.3.4 Search Order Process</span>
+	</h3>
+	<p class="c0 c1">
+		<span class="c4">From the search page, user enter the order
+			number and surname then click the search button. The browser send the
+			request </span><span class="c3">action search </span><span class="c4">and
+		</span><span class="c3">orderid and surname</span><span class="c4">&nbsp;to
+			the servlet </span><span class="c3">OrderController.</span><span class="c4">&nbsp;In
+			the </span><span class="c3">OrderController</span><span class="c4">,
+			the </span><span class="c3">Order </span><span class="c4">and</span><span
+			class="c3">&nbsp;Customer Model </span><span class="c4">will
+			be instantiated by connecting to EJB </span><span class="c3">Cart.java</span><span
+			class="c4">&nbsp;interface and it calls JPA entity Purchase
+			model via JPA the database connection is made and data is retrieved.
+			The </span><span class="c3">OrderController </span><span class="c4">sends
+			the EJB object &nbsp;</span><span class="c3">Cart.java</span><span
+			class="c4">&nbsp;interface to the </span><span class="c3">MainController</span><span
+			class="c4">. From there, the </span><span class="c3">MainController
+		</span><span class="c4">dispatches the object &nbsp;back to the </span><span
+			class="c3">View</span><span class="c4">&nbsp;JSP file which is
+		</span><span class="c3">search_result.jsp</span><span class="c4">. In
+			order to display cart information, the </span><span class="c3">search.jsp</span><span
+			class="c4">&nbsp;</span><span class="c3">View </span><span class="c4">will
+			invoke back to the </span><span class="c3">Purchase Model </span><span
+			class="c4">to retrieve the product info. Finally, the </span><span
+			class="c3">search.jsp</span><span class="c4">&nbsp;</span><span
+			class="c3">View </span><span class="c4">responses the
+			information to the client browser and display them.</span>
+	</p>
+	<p class="c0 c1 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0 c1">
+		<img height="365" src="images/image03.png" width="602">
+	</p>
+	<p class="c0 c1 c8">
+		<span class="c4"></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<h1 class="c0 c1">
+		<a name="h.iimot6f5z0xz"></a><span>2. Sequence Diagram</span>
+	</h1>
+	<p class="c0 c1">
+		<img height="508" src="images/image10.png" width="682">
+	</p>
+	<p class="c0 c1">
+		<span class="c4">The above sequence diagram is general
+			&nbsp;overview of our web application and providing view how the data
+			is being processed.</span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<h2 class="c0">
+		<a name="h.qg7j9n7jhtco"></a><span>2.1 Display product process</span>
+	</h2>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c21">
+		<img height="617" src="images/image06.png" width="681">
+	</p>
+	<p class="c0 c1">
+		<span class="c4">In the above Sequence diagram we have a
+			scenario of ordering products</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">1. &nbsp; &nbsp; &nbsp; Client sends the
+			request of category name via jsp page</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">2. &nbsp; &nbsp; &nbsp; Java servlet receives
+			the request from the JSP page of category name.</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">3. &nbsp; &nbsp; &nbsp; Java servlet controls
+			and invokes the EJB Shop.java interface.</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">4. &nbsp; &nbsp; &nbsp; The EJB calls the JPA
+			JPQL query model ShopDAO to send parameter</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">5. &nbsp; &nbsp; &nbsp; ShopDAO process the
+			query and returns Product JPA model to EJB Shop interface. </span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">6. &nbsp; &nbsp; &nbsp;EJB sends the processed
+			product model of data to java servlet.</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">7. &nbsp; &nbsp; &nbsp;Java servlet controls
+			the data to display and response is sent back to product jsp page</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">8. &nbsp; &nbsp; &nbsp;jsp page controls the
+			view for browser.</span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<h2 class="c0 c1">
+		<a name="h.pufyipihg635"></a><span>2.2 Searching Order </span>
+	</h2>
+	<p class="c0">
+		<img height="512" src="images/image11.png" width="699">
+	</p>
+	<p class="c0 c1">
+		<span class="c4">In the sequence diagram we have search for
+			orders. </span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">1.The user customer enters the orderID and
+			surname to check the orders, status and products purchased. </span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">2. User enter parameters the Controller choose
+			the EJB and send data.</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">3. EJB processes the orderID and status</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">4. JPA sends the query to database. The
+			ShopDAO.java which uses JPQL.</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">5. JPA produces the entity of Product list and
+			purchase. </span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">6. EJB process the JPA entities and process
+			for display model.</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">7. Controller sends the resulting model
+			consist of product list and purchase details to JSP.</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">8. JSP and JSTL handles the view on browser
+			end. </span>
+	</p>
+	<h2 class="c0 c1">
+		<a name="h.m0xn27p9twco"></a><span>2.3 Ordering product </span>
+	</h2>
+	<p class="c0 c17">
+		<img height="617" src="images/image01.png" width="708">
+	</p>
+	<p class="c0 c1">
+		<span class="c4">In the above sequence diagram we have ordering
+			process. </span>
+	</p>
+	<ol class="c18" start="1">
+		<li class="c5 c0 c1"><span class="c4">&nbsp;User choose
+				the products from displayed product list</span></li>
+		<li class="c5 c0 c1"><span class="c4">&nbsp;User might
+				update or delete the order session, which is part of update.</span></li>
+		<li class="c5 c0 c1"><span class="c4">&nbsp;After
+				proceeding orders EJB process the order model by calling the JPA
+				models.</span></li>
+		<li class="c5 c0 c1"><span class="c4">&nbsp;EJB set the
+				data into JPA entity model. </span></li>
+		<li class="c5 c0 c1"><span class="c4">JPA connects to
+				database and inserts values into database</span></li>
+		<li class="c5 c0 c1"><span class="c4">After order JPA
+				request for acknowledgement for orderID.</span></li>
+		<li class="c0 c1 c5"><span class="c4">OrderID is sent to
+				EJB from JPA , EJB processes the orderID</span></li>
+		<li class="c5 c0 c1"><span class="c4">OrderID is sent as
+				response to JSP page.</span></li>
+		<li class="c5 c0 c1"><span class="c4">JSP handles the view
+				or display of orderID on browser, user end. </span></li>
+	</ol>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<h1 class="c0 c1">
+		<a name="h.f35ge594wu8g"></a><span>3. Components</span>
+	</h1>
+	<h2 class="c0">
+		<a name="h.5spb2v7451da"></a><span>3.1 Shop EJB container:</span>
+	</h2>
+	<p class="c0 c8">
+		<span></span>
+	</p>
+	<p class="c0">
+		<img height="314" src="images/image05.png" width="410">
+	</p>
+	<p class="c0 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">The role of shop ejb container is simply get
+			the request action from the controller then process that requests
+			with Database or do some business logic. For the current business
+			logic, the shop ejb does 4 jobs display new products, categories,
+			product by category and product by product id. </span>
+	</p>
+	<p class="c0 c8">
+		<span></span>
+	</p>
+	<h2 class="c0">
+		<a name="h.8g56uzmtlqhv"></a><span>3.2 Cart EJB Container:</span>
+	</h2>
+	<p class="c0 c8">
+		<span></span>
+	</p>
+	<p class="c0">
+		<img height="314" src="images/image04.png" width="410">
+	</p>
+	<p class="c0 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">The role of Cart EJB is to process all the
+			activity for the Shopping Cart functionality such as add products to
+			cart, delete products from cart, update product information, display
+			cart information.</span>
+	</p>
+	<p class="c0 c8">
+		<span class="c4"></span>
+	</p>
+	<h2 class="c0">
+		<a name="h.ophwumhvbuau"></a><span>3.3 Order EJB Container:</span>
+	</h2>
+	<p class="c0 c8">
+		<span></span>
+	</p>
+	<p class="c0">
+		<img height="418" src="images/image02.png" width="410">
+	</p>
+	<p class="c0 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">The role of Order Container is to process all
+			the activities around the customer purchase such as adding order
+			products and customer info to database, generate the order number
+			with appropriate format, get the order when request needed, and check
+			and update the status order.</span>
+	</p>
+	<h1 class="c0 c1">
+		<a name="h.dj7yjo1iy5uu"></a><span>4. Class Diagram</span>
+	</h1>
+	<p class="c0">
+		<img height="634" src="images/image09.png" width="720">
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<h1 class="c0 c1">
+		<a name="h.gc1o34fs5lxi"></a><span>5. Webservice </span>
+	</h1>
+	<h2 class="c0">
+		<a name="h.u4qz2t3ynwon"></a><span>5.1 Web service
+			authentication</span>
+	</h2>
+	<p class="c0">
+		<img height="412" src="images/image14.png" width="650">
+	</p>
+	<p class="c0 c1">
+		<span class="c4">In the above diagram we have webservice client
+			making request for Supplier webservice </span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">before the requesting webservice supplier the
+			client has to enter valid authentication to access the supplier
+			webservice. The supplier connects to update and view paid purchase
+			data. </span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">Once the authentication is committed we
+			supplier can process the update and view purchases list.</span><span>&nbsp;</span>
+	</p>
+	<h2 class="c0 c1">
+		<a name="h.lhfpexde6azy"></a><span>5.2 Display list PAID order</span>
+	</h2>
+	<p class="c0 c1">
+		<img height="394" src="images/image08.png" width="705">
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">The diagram is the process of request from the
+			supplier client to display the paid puchase list. In above scenario
+			we have been reusing the EJB and JPA container which make our project
+			more flexible. The EJB and JPA controls the business logic and
+			display the values as per supplier request. </span>
+	</p>
+	<h2 class="c0 c1">
+		<a name="h.2jcon673eszs"></a><span>5.3 Update orders</span>
+	</h2>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<p class="c0 c1">
+		<img height="421" src="images/image13.png" width="642">
+	</p>
+	<p class="c0 c1">
+		<span class="c4">In above diagram we have scenario of updating
+			order. Client input the results like orderID and status. The service
+			handles the exception handling when he/ her tries to enter incorrect
+			parameter values. The exception or error message is displayed to the
+			client. The EJB controls the update of the process applying business
+			process and there after ShopDAO is an interface which is JPQL model
+			from where the query is parameters is inputed. </span>
+	</p>
+	<p class="c0 c1 c8">
+		<span></span>
+	</p>
+	<h1 class="c0 c1">
+		<a name="h.73hxi05xl4vj"></a><span>6. Security</span>
+	</h1>
+	<p class="c0 c1">
+		<span>I</span><span class="c4">n this website, there are two
+			areas need to be strictly protected - Admin and Web Service area. Due to the time consuming, we decided to prefer declarative authentication rather than programmatic.</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">Admin area is managed by order user role which
+			is defined in weblogic server under Shop group</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">Web service area is managed by supplier user
+			role which is defined in weblogic server under SupplierGroup.</span>
+	</p>
+	<p class="c0 c1">
+		<span class="c4">The issue occurs when the web service is
+			protected, there is no way to access the service on the server to
+			test the function. It seems relevant because when the service
+			deployed only the service client can access it with right permission
+			and there should be no job for user in server to do with service.</span>
+	</p>
+	<h1 class="c0 c1">
+		<a name="h.qktwoq8ucvyq"></a><span>7</span><span>. Assumptions</span>
+	</h1>
+	<ol class="c19" start="1">
+		<li class="c5 c0 c1"><span class="c4">There is no viewing
+				product detail because all information of the product which are
+				showed in the browsing pages.</span></li>
+	</ol>
+	<ol class="c19" start="1">
+		<li class="c5 c0 c1"><span class="c4">Each time customers
+				purchase, their information will be saved it into database.</span></li>
+		<li class="c5 c0 c1"><span class="c4">There is only new
+				customer. One purchase one new customer.</span></li>
+		<li class="c5 c0 c1"><span class="c4">Each purchase
+				contains only one customer and one cart.</span></li>
+		<li class="c5 c0 c1"><span class="c4">Searching order
+				returns only one order for each customer.</span></li>
+		<li class="c5 c0 c1"><span class="c4">In the cart process,
+				when customer update the quantity product which is equal or less
+				than 0 that product will be removed. If customer enters alpha
+				character the original quantity will be kept.</span></li>
+		<li class="c5 c0 c1"><span class="c4">In the admin page
+				update status order, there are only 3 code </span><span class="c3">ORDERED</span><span
+			class="c4">, </span><span class="c3">SENT</span><span class="c4">,
+		</span><span class="c3">PAID. </span><span class="c4">So If there is
+				invalid input, the status simply rollbacks the original status.</span></li>
+		<li class="c5 c0 c1"><span class="c4">Since after
+				protecting the web service by using BASIC authentication, there is
+				no such way to access the service from server or import the WSDL
+				from client (for the client there are some tool can do it but the
+				team hasn&rsquo;t found the solution). So in order to rapidly
+				develop the client, we decided to load the WSDL file locally.</span></li>
+	</ol>
+	<p class="c0 c1 c8">
+		<span class="c4"></span>
+	</p>
+	<h1 class="c0 c1">
+		<a name="h.tttbawwlq3ei"></a><span>8</span><span>. Installation</span>
+	</h1>
+	<ol class="c19" start="1">
+		<li class="c5 c0 c1"><span class="c4">Mysql 5.1</span></li>
+		<li class="c5 c0 c1"><span class="c4">Data Connection Pool
+				with Data Source name: </span><span class="c3 c9">assignment_2</span></li>
+		<li class="c5 c0 c1"><span class="c4">Table name: </span><span
+			class="c3 c9">Category, Product, Cart_Product, Cart, Customer,
+				Purchase</span></li>
+		<li class="c5 c0 c1"><span class="c4">Security Group: </span><span
+			class="c3 c9">Shop, SupplierShop</span></li>
+		<li class="c5 c0 c1"><span class="c4">User: </span><span
+			class="c3 c9">orders, supplier</span></li>
+		<li class="c5 c0 c1"><span class="c4">Google chrome
+				extension </span><span class="c3 c9">Wizdler </span><span class="c4">(</span><span
+			class="c3 c7"><a class="c6"
+				href="https://chrome.google.com/webstore/detail/wizdler/oebpmncolmhiapingjaagmapififiakb">Chrome
+					Store</a></span><span class="c4">)</span><span class="c3 c9">&nbsp;</span><span
+			class="c4">to download the WSDL</span></li>
+		<li class="c5 c0 c1"><span class="c3 c9">wsimport</span><span
+			class="c4">&nbsp;tool to import the WSDL locally</span></li>
+		<li class="c5 c0 c1"><span class="c4">By the default the WSDL location defined in the Destkop Unix environment. If changing needed, just change the path in the path in teh setupPort() function in teh Client.java</span></li>
+		<li class="c5 c0 c1"><span class="c4">Run on Oracle weblogic server 11gR1 (10.3.6)</span></li>
+		<li class="c5 c0 c1"><span class="c4">Third party
+				libraries:</span></li>
+	</ol>
+	<ol class="c10" start="1">
+		<li class="c15 c0 c1"><span class="c4">javax.servlet.jsp.jstl-1.2.1.jar
+				(JSTL lib)</span></li>
+		<li class="c15 c0 c1"><span class="c4">javax.servlet.jsp.jstl-api-1.2.1.jar
+				(JSTL lib)</span></li>
+		<li class="c0 c1 c15"><span class="c4">mysql-connector-java-commercial-5.1.17-bin.jar
+				(Mysql Driver)</span></li>
+	</ol>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" id="WebApp_ID">
+  <display-name>ass</display-name>
+  <servlet>
+    <description></description>
+    <display-name>AdminController</display-name>
+    <servlet-name>AdminController</servlet-name>
+    <servlet-class>com.arunhoan.aip.controller.AdminController</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>MainController</display-name>
+    <servlet-name>MainController</servlet-name>
+    <servlet-class>com.arunhoan.aip.controller.MainController</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>CartController</display-name>
+    <servlet-name>CartController</servlet-name>
+    <servlet-class>com.arunhoan.aip.controller.CartController</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>OrderController</display-name>
+    <servlet-name>OrderController</servlet-name>
+    <servlet-class>com.arunhoan.aip.controller.OrderController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SupplierServiceServlethttp</servlet-name>
+    <servlet-class>com.arunhoan.aip.service.SupplierImpl</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminController</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MainController</servlet-name>
+    <url-pattern>/shop</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartController</servlet-name>
+    <url-pattern>/cart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderController</servlet-name>
+    <url-pattern>/order</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SupplierServiceServlethttp</servlet-name>
+    <url-pattern>SupplierService</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>shop</welcome-file>
+  </welcome-file-list>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Admin resources</web-resource-name>
+      <url-pattern>/admin</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <description>Constraint for administrator manage products</description>
+      <role-name>orders</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Web service resources</web-resource-name>
+      <url-pattern>/SupplierService</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <description>Constraint for suppler invoke the web service</description>
+      <role-name>suppliers</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <login-config>
+    <auth-method>BASIC</auth-method>
+    <realm-name>default</realm-name>
+  </login-config>
+  <security-role>
+    <description>Admin users allow to access admin pages</description>
+    <role-name>orders</role-name>
+  </security-role>
+  <security-role>
+    <description>Suppler users allow to invoke web service</description>
+    <role-name>suppliers</role-name>
+  </security-role>
+</web-app>
